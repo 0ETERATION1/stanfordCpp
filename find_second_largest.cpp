@@ -33,9 +33,9 @@ int main()
 
         std::cout << " ? ";
         std::cin >> user_input;
+
         if (user_input > largest)
         {
-            std::cout << "HELLO " << std::endl;
             second_largest = largest;
         }
 
