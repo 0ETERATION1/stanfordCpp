@@ -55,7 +55,7 @@ std::string trim(const std::string &str)
         return ""; // empty string or all whitespace
     }
 
-    for (size_t i = str.length() - 1; i >= found_start_of_str; i--)
+    for (int i = static_cast<int>(str.length() - 1); i >= found_start_of_str; i--)
     {
         if (!std::isspace(str[i]))
         {
